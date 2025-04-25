@@ -1,0 +1,15 @@
+@mixin border-radius($radius: $border-radius) {
+    border-radius: $radius;
+}
+
+@mixin box-shadow($shadow: $box-shadow-light) {
+    box-shadow: $shadow;
+}
+
+@mixin transition($properties: all, $duration: 0.3s, $ease: ease) {
+    transition: $properties $duration $ease;
+}
+
+@mixin gradient-background($start-color, $end-color, $direction: to bottom) {
+    background: linear-gradient($direction, $start-color, $end-color);
+}

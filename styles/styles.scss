@@ -1,17 +1,110 @@
 // Definición de variables
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
 $card-width: 95%;
+$max-width: 260px;
 $card-height: 100%;
 $card-margin: 10px;
 
-
-.promo-card {
+.card {
     width: $card-width !important; 
     height: $card-height !important;
     margin: $card-margin !important;
 }
 
-.platillo-card {
-    width: $card-width !important; 
-    height: $card-height !important;
-    margin: $card-margin !important;
+body {
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c, #4a4a4a); // Gradiente oscuro con tonos contrastantes
+    color: #ffffff; // Texto blanco para contraste
+    font-family: 'Arial', sans-serif; // Fuente legible
+    margin: 0;
+    padding: 0;
 }
+
+// Gradiente para los cards
+.card {
+    background: linear-gradient(to bottom, #d16ba5 30%, #4a4a4a 70%); // Gradiente rosa y gris oscuro
+    border-radius: 15px; // Bordes redondeados
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); // Sombra inicial
+    overflow: hidden; // Asegura que el contenido respete los bordes redondeados
+    transition: box-shadow 0.3s ease, transform 0.3s ease; // Transición suave para sombra y escala
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px  #d16ba5; // Sombra más intensa al pasar el mouse
+    transform: scale(1.02); // Efecto de leve aumento
+}
+
+// Estilo para el footer del card
+.card-footer {
+    background-color: #2c2c2c; // Fondo oscuro
+    color: #ffffff; // Texto blanco para contraste
+    font-weight: bold; // Texto más destacado
+    text-align: center; // Centra el texto
+    padding: 10px; // Espaciado interno
+    border-top: 1px solid rgba(255, 255, 255, 0.1); // Línea sutil para separar el footer
+}
+
+// Ajustes para el texto dentro del card
+.card-body {
+    color: #ffffff; // Texto blanco para contraste
+    padding: 20px; // Espaciado interno
+    position: relative; // Necesario para posicionar el sombreado detrás del texto
+}
+
+
+
+
+// Títulos dentro del card
+.card-title {
+    font-size: 1.5rem; // Tamaño de fuente más grande
+    font-weight: bold; // Texto destacado
+    text-align: center; // Centra el título
+    color: #ffffff; // Texto blanco
+}
+
+// Estilos para la barra de navegación
+.navbar {
+    background-color: #d16ba5 !important; // Fondo rosa usado en los gradientes
+    border-radius: 15px; // Bordes redondeados
+    color: #ffffff; // Texto blanco para contraste
+    font-weight: bold; // Texto destacado
+    padding: 10px 20px; // Espaciado interno
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra para dar profundidad
+}
+
+// Estilos para los enlaces de la barra de navegación
+.navbar .nav-link {
+    color: #ffffff; // Texto blanco para contraste
+    font-size: 1rem; // Tamaño de fuente legible
+    text-transform: uppercase; // Texto en mayúsculas para destacar
+    margin-right: 15px; // Espaciado entre enlaces
+    transition: color 0.3s ease; // Transición suave al pasar el mouse
+}
+
+.navbar .nav-link:hover {
+    color: #4a4a4a; // Cambia a gris oscuro al pasar el mouse
+}
+
+// Estilos para el menú desplegable
+.navbar .dropdown-menu {
+    background-color: #2c2c2c; // Fondo oscuro usado en el fondo de la página
+    border-radius: 10px; // Bordes redondeados
+    color: #ffffff; // Texto blanco para contraste
+    border: none; // Sin bordes adicionales
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra para dar profundidad
+}
+
+// Estilos para los enlaces dentro del menú desplegable
+.navbar .dropdown-item {
+    color: #ffffff; // Texto blanco para contraste
+    font-size: 0.9rem; // Tamaño de fuente legible
+    padding: 10px 15px; // Espaciado interno
+    transition: background-color 0.3s ease, color 0.3s ease; // Transición suave
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #4a4a4a; // Fondo gris oscuro al pasar el mouse
+    color: #d16ba5; // Texto rosa para destacar
+}
+
+
