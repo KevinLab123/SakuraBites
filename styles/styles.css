@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
 .card {
   width: 95% !important;
   height: 100% !important;
   margin: 10px !important;
+  font-family: "Merienda", cursive;
 }
 
 body {
@@ -46,6 +48,9 @@ body {
   font-weight: bold;
   text-align: center;
   color: #ffffff;
+  font-family: "Merienda", cursive;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .navbar {
@@ -53,6 +58,7 @@ body {
   border-radius: 15px;
   color: #ffffff;
   font-weight: bold;
+  font-family: "Merienda", cursive;
   padding: 10px 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -63,6 +69,7 @@ body {
   text-transform: uppercase;
   margin-right: 15px;
   transition: color 0.3s ease;
+  font-family: "Merienda", cursive;
 }
 
 .navbar .nav-link:hover {
@@ -87,6 +94,29 @@ body {
 .navbar .dropdown-item:hover {
   background-color: #4a4a4a;
   color: #d16ba5;
+}
+
+.card-img-top {
+  border-radius: 15px;
+}
+
+.card-text {
+  font-family: "Merienda", cursive;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: "Merienda", cursive;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.img-fluid {
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */

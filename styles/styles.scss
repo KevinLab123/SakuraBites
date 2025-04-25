@@ -1,5 +1,6 @@
 // Definición de variables
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
 
 $card-width: 95%;
 $max-width: 260px;
@@ -10,6 +11,7 @@ $card-margin: 10px;
     width: $card-width !important; 
     height: $card-height !important;
     margin: $card-margin !important;
+    font-family: 'Merienda', cursive; // Aplica la fuente a todo el card
 }
 
 body {
@@ -51,15 +53,15 @@ body {
     position: relative; // Necesario para posicionar el sombreado detrás del texto
 }
 
-
-
-
 // Títulos dentro del card
 .card-title {
     font-size: 1.5rem; // Tamaño de fuente más grande
     font-weight: bold; // Texto destacado
     text-align: center; // Centra el título
     color: #ffffff; // Texto blanco
+    font-family: 'Merienda', cursive; // Aplica la fuente a los títulos de los cards
+    font-weight: 700; // Peso de la fuente para destacar
+    font-size: 1.5rem; // Tamaño del título
 }
 
 // Estilos para la barra de navegación
@@ -68,6 +70,7 @@ body {
     border-radius: 15px; // Bordes redondeados
     color: #ffffff; // Texto blanco para contraste
     font-weight: bold; // Texto destacado
+    font-family: 'Merienda', cursive; // Aplica la fuente Merienda al navbar
     padding: 10px 20px; // Espaciado interno
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra para dar profundidad
 }
@@ -79,6 +82,7 @@ body {
     text-transform: uppercase; // Texto en mayúsculas para destacar
     margin-right: 15px; // Espaciado entre enlaces
     transition: color 0.3s ease; // Transición suave al pasar el mouse
+    font-family: 'Merienda', cursive; // Aplica la fuente Merienda a los enlaces
 }
 
 .navbar .nav-link:hover {
@@ -107,4 +111,27 @@ body {
     color: #d16ba5; // Texto rosa para destacar
 }
 
+.card-img-top {
+    border-radius: 15px; // Bordes redondeados
+}
+
+.card-text {
+    font-family: 'Merienda', cursive; // Aplica la fuente al texto dentro de los cards
+    font-weight: 400; // Peso de la fuente para el texto normal
+    font-size: 1rem; // Tamaño del texto
+}
+
+// Estilos para los títulos h1
+h1 {
+    font-family: 'Merienda', cursive; // Aplica la fuente Merienda a los títulos h1
+    font-weight: 700; // Peso de la fuente para destacar
+    font-size: 2.5rem; // Tamaño grande para los títulos
+    color: #ffffff; // Texto blanco para contraste
+    text-align: center; // Centra el texto
+    margin-bottom: 20px; // Espaciado inferior
+}
+
+.img-fluid {
+    border-radius: 15px; // Bordes redondeados
+}
 
